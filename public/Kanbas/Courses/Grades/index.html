@@ -1,67 +1,80 @@
-<select id="Gradebook">
-  <option value="A1">A1</option>
-  <option value="A1">A2</option>
-  <option selected value="Gradebook">Gradebook</option>
-</select>
-<button>Import</button>
-<select id="Export">
-  <option value="A1">A1</option>
-  <option value="A1">A2</option>
-  <option selected value="Export">Export</option>
-</select>
-<button>Configure</button>
-<h2>Student Names</h2>
-<input
-  type="text"
-  id="text-fields-students"
-  placeholder="Search Students"
-/><br />
+<html>
+  <head></head>
+  <body>
+    <select id="Gradebook">
+      <option value="A1">A1</option>
+      <option value="A1">A2</option>
+      <option selected value="Gradebook">Gradebook</option>
+    </select>
+    <button>Import</button>
+    <select id="Export">
+      <option value="A1">A1</option>
+      <option value="A1">A2</option>
+      <option selected value="Export">Export</option>
+    </select>
+    <button>Configure</button>
+    <h2>Student Names</h2>
+    <input
+      type="text"
+      id="text-fields-students"
+      placeholder="Search Students"
+    /><br />
 
-<h2>Assignment Names</h2>
-<input
-  type="text"
-  id="text-fields-assignments"
-  placeholder="Search Assignments"
-/><br />
-<button>Apply Filters</button>
-<table border="1" width="100%">
-  <thead>
-    <tr>
-      <th>Student Name</th>
-      <th>A1 Setup</th>
-      <th>A2 HTML</th>
-      <th>A3 CSS</th>
-      <th>A4 BootStrap</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Ananya Radhakrishnan</td>
-      <td>100</td>
-      <td>99</td>
-      <td><input type="number" id="text-fields-grade" value="90" /><br /></td>
-      <td>80</td>
-    </tr>
-    <tr>
-      <td>Selena Gomez</td>
-      <td>0</td>
-      <td><input type="number" id="text-fields-grade" value="50" /><br /></td>
-      <td>100</td>
-      <td>21</td>
-    </tr>
-    <tr>
-      <td>Bob Stevens</td>
-      <td><input type="number" id="text-fields-grade" value="40" /><br /></td>
-      <td>20</td>
-      <td>95</td>
-      <td>82</td>
-    </tr>
-    <tr>
-      <td>Sarah Jane</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td><input type="number" id="text-fields-grade" value="0" /><br /></td>
-    </tr>
-  </tbody>
-</table>
+    <h2>Assignment Names</h2>
+    <input
+      type="text"
+      id="text-fields-assignments"
+      placeholder="Search Assignments"
+    /><br />
+    <button>Apply Filters</button>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>A1 Setup</th>
+          <th>A2 HTML</th>
+          <th>A3 CSS</th>
+          <th>A4 BootStrap</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ananya Radhakrishnan</td>
+          <td>100</td>
+          <td>99</td>
+          <td>
+            <input type="number" id="text-fields-grade" value="90" /><br />
+          </td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Selena Gomez</td>
+          <td>0</td>
+          <td>
+            <input type="number" id="text-fields-grade" value="50" /><br />
+          </td>
+          <td>100</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Bob Stevens</td>
+          <td>
+            <input type="number" id="text-fields-grade" value="40" /><br />
+          </td>
+          <td>20</td>
+          <td>95</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>Sarah Jane</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>
+            <input type="number" id="text-fields-grade" value="0" /><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

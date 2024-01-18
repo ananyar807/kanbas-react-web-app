@@ -1,127 +1,159 @@
 <html>
-    <body>
-        <table>
-            <tbody>
-              <tr>
-                <td>
-                  <ul>
-                    <li><a href="/Kanbas/Account/Navigation/index.html"> Account</a></li>
-                    <li>
-                      <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-                    </li>
-                    <li>
-                      <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                      <a href="#">Calendar</a>
-                    </li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>
-                      <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-                    </li>
-                    <li><a href="#"> Modules</a></li>
-                    <li><a href="#"> Piazza</a></li>
-                    <li><a href="#"> Zoom Meetings</a></li>
-                    <li>
-                      <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
-                    </li>
-                    <li><a href="#"> Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-                    <li><a href="#"> People</a></li>
-                    <li><a href="#"> Panapto Video</a></li>
-                    <li><a href="#"> Discussions</a></li>
-                    <li>
-                      <a href="#"> Announcements</a>
-                    </li>
-                    <li><a href="#"> Pages</a></li>
-                    <li><a href="#"> Files</a></li>
-                    <li><a href="#"> Rubrics</a></li>
-                    <li><a href="#"> Outcomes</a></li>
-                    <li>
-                      <a href="#"> Collaborations</a>
-                    </li>
-                    <li><a href="#"> Syllabus</a></li>
-                    <li><a href="#"> Settings</a></li>
-                  </ul>
-                </td>
-                <td>
-                  <select>
-                      <option selected value="SpeedGrader">SpeedGrader</option>
-                  </select>
-                  <h1>Assignment Name</h1>
-                  <input
-                    id="text-fields-assignment-name"
-                    type="text"
-                    placeholder="Assignment Name"
-                  />
-                </br>
-                </br>
-                  <input
-                    id="text-fields-assignment-description"
-                    placeholder="Assignment Description"
-                    type = "text"
-                  />
-                  <p> Points</p>
-                  <input id="text-fields-assignment-points"
-                  placeholder="Assignment Points"
-                  type = "number"/>
-          
-                  <p> Display Grade as</p>
-                  <select>
-                      <option selected value="Percentage">Percentage</option>
-                  </select>
-          
-                  <p> Submission Type</p>
-                  <select>
-                      <option selected value="Online">Online</option>
-                  </select>
-          
-                  <p> Online Entry Options</p>
-                  <input type="checkbox" value="" name="check-text" id="chkbox-text" />
-                  <label for="chkbox-text">Text Entry</label>
-                  <br />
-                  
-                  <input type="checkbox" value="" name="check-url" id="chkbox-url" />
-                  <label for="chkbox-url">Website URL</label>
-                  <br />
+  <head></head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                <a href="/Kanbas/Account/Navigation/index.html"> Account</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+              </li>
+              <li>
+                <a href="#">Calendar</a>
+              </li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+              </li>
+              <li><a href="#"> Modules</a></li>
+              <li><a href="#"> Piazza</a></li>
+              <li><a href="#"> Zoom Meetings</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Assignments</a
+                >
+              </li>
+              <li><a href="#"> Quizzes</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li><a href="#"> People</a></li>
+              <li><a href="#"> Panapto Video</a></li>
+              <li><a href="#"> Discussions</a></li>
+              <li>
+                <a href="#"> Announcements</a>
+              </li>
+              <li><a href="#"> Pages</a></li>
+              <li><a href="#"> Files</a></li>
+              <li><a href="#"> Rubrics</a></li>
+              <li><a href="#"> Outcomes</a></li>
+              <li>
+                <a href="#"> Collaborations</a>
+              </li>
+              <li><a href="#"> Syllabus</a></li>
+              <li><a href="#"> Settings</a></li>
+            </ul>
+          </td>
+          <td>
+            <input
+              id="text-fields-assignments"
+              placeholder="Search for Assignments"
+            />
+            <button>Group</button>
+            <button>Assignment</button>
+            <select id="EditDates">
+              <option selected value="Edit Assignment Dates">
+                Edit Assignment Dates
+              </option>
+            </select>
 
-                  <input type="checkbox" value="" name="check-media" id="chkbox-media" />
-                  <label for="chkbox-media">Media Recordings</label>
-                  <br />
+            <h1>
+              ASSIGNMENTS 40% of Total
+              <select id="Edit">
+                <option selected value="Edit">Edit</option>
+                <option value="Speed Grader">Speed Grader</option>
+                <option value="Duplicate">Duplicate</option>
+                <option value="Delete">Delete</option>
+                <option value="Move To">Move To...</option>
+                <option value="Send To">Send To..</option>
+                <option value="Copy To">Copy To...</option>
+                <option value="Share to Commons">Share to Commons</option>
+              </select>
+            </h1>
 
-                  <input type="checkbox" value="" name="check-annotation" id="chkbox-annotation" />
-                  <label for="chkbox-annotation">Student Annotation</label>
+            <ul>
+              <li><a href="#">Assignment 1</a></li>
+              <li><a href="#">Assignment 2</a></li>
+              <li><a href="#">Assignment 3</a></li>
+              <li><a href="#">Assignment 4</a></li>
+            </ul>
 
-                  <p>Assign to</p>
-                  <input type="text" />
+            <h1>
+              QUIZZES 10% of Total
+              <select id="Edit">
+                <option selected value="Edit">Edit</option>
+                <option value="Speed Grader">Speed Grader</option>
+                <option value="Duplicate">Duplicate</option>
+                <option value="Delete">Delete</option>
+                <option value="Move To">Move To...</option>
+                <option value="Send To">Send To..</option>
+                <option value="Copy To">Copy To...</option>
+                <option value="Share to Commons">Share to Commons</option>
+              </select>
+            </h1>
 
-                  <p>Due</p>
-                  <input type="date" />
+            <ul>
+              <li><a href="#">Quiz 1</a></li>
+              <li><a href="#">Quiz 2</a></li>
+              <li><a href="#">Quiz 3</a></li>
+              <li><a href="#">Quiz 4</a></li>
+            </ul>
 
-                  <p>Available from</p>
-                  <input type="date" />
+            <h1>
+              EXAMS 20% of Total
+              <select id="Edit">
+                <option selected value="Edit">Edit</option>
+                <option value="Speed Grader">Speed Grader</option>
+                <option value="Duplicate">Duplicate</option>
+                <option value="Delete">Delete</option>
+                <option value="Move To">Move To...</option>
+                <option value="Send To">Send To..</option>
+                <option value="Copy To">Copy To...</option>
+                <option value="Share to Commons">Share to Commons</option>
+              </select>
+            </h1>
 
-                  <p>Until</p>
-                  <input type="date" />
+            <ul>
+              <li><a href="#">Exam 1</a></li>
+              <li><a href="#">Midterm</a></li>
+              <li><a href="#">Exam 2</a></li>
+              <li><a href="#">Final</a></li>
+            </ul>
 
-                  <a href="index.html">
-                    <button> Cancel</button>
-                  </a>
-                  
-                  <a href="index.html">
-                    <button> Save</button>
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </body>
+            <h1>
+              PROJECT 30% of Total
+              <select id="Edit">
+                <option selected value="Edit">Edit</option>
+                <option value="Speed Grader">Speed Grader</option>
+                <option value="Duplicate">Duplicate</option>
+                <option value="Delete">Delete</option>
+                <option value="Move To">Move To...</option>
+                <option value="Send To">Send To..</option>
+                <option value="Copy To">Copy To...</option>
+                <option value="Share to Commons">Share to Commons</option>
+              </select>
+            </h1>
+
+            <ul>
+              <li><a href="#">Project 1</a></li>
+              <li><a href="#">Final Project</a></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
