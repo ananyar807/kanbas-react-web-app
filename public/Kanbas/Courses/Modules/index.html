@@ -1,91 +1,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/Kanbas/styles.css" />
-    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
   </head>
   <body>
-    <div class="d-flex">
-      <div class="d-none d-md-block">
-        <ul class="wd-kanbas-navigation">
-          <ul class="wd-kanbas-navigation">
-            <li><a href="/Kanbas/Dashboard/screen.html"> N </a></li>
-            <li class="first-item"><a href="/Kanbas/Account/Navigation/index.html"> 
-              <i class="fa fa-user" aria-hidden="true"></i> Account</a></li>
-            <li>
-              <a href="/Kanbas/Dashboard/screen.html">
-                <i class="fa fa-tachometer"></i> Dashboard</a
-              >
-            </li>
-            <li class="wd-active">
-              <a href="/Kanbas/Courses/Home/screen.html">
-                <i class="fa fa-book"></i>Courses</a
-              >
-            </li>
-            <li>
-              <a href="#"> <i class="fa fa-calendar"></i>Calendar</a>
-            </li>
-            <li>
-              <a href="#"> <i class="fa fa-inbox"></i> </br> Inbox</a>
-            </li>
-            <li><a href="#">
-              <i class="fa fa-history" aria-hidden="true"></i> History</a></li>
-            <li><a href="#">
-              <i class="fa fa-television" aria-hidden="true"></i> Studio</a></li>
-            <li><a href="#">
-              <i class="fa fa-creative-commons" aria-hidden="true"></i> Commons</a></li>
-            <li><a href="#">
-              <i class="fa fa-question-circle" aria-hidden="true"></i> </br> Help</a></li>
-          </ul>
-        </ul>
-      </div>
-      <div class="d-none d-md-block">
-        <ul class="wd-navigation">
-          <ul class="wd-navigation">
-            <li class="wd-active">
-              <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-            </li>
-            <li >
-              <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
-            </li>
-            <li><a href="http://piazza.com"> Piazza</a></li>
-            <li><a href="#"> Zoom Meetings</a></li>
-            <li>
-              <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
-            </li>
-            <li><a href="#"> Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-            <li><a href="#"> People</a></li>
-            <li><a href="#"> Panapto Video</a></li>
-            <li><a href="#"> Discussions</a></li>
-            <li>
-              <a href="#"> Announcements</a>
-            </li>
-            <li><a href="#"> Pages</a></li>
-            <li><a href="#"> Files</a></li>
-            <li><a href="#"> Rubrics</a></li>
-            <li><a href="#"> Outcomes</a></li>
-            <li>
-              <a href="#"> Collaborations</a>
-            </li>
-            <li><a href="#"> Syllabus</a></li>
-            <li><a href="#"> Settings</a></li>
-          </ul>
-        </ul>
-      </div>
-
-      <!-- add a header?
-        <div class="header">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div> -->
-      <div class="flex-fill">
-        <ul class="list-group wd-modules">
-          <!-- Copy Course Home here -->
-          <hr />
+    <hr />
     <!-- Implement buttons Collapse All, View Progress, etc. here -->
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
       <button class="button">Collapse All</button>
@@ -100,7 +20,9 @@
       <button>+ Module</button>
       <button><i class="fa fa-ellipsis-v"></i></button>
     </div>
-    
+
+    <hr />
+
     <ul class="list-group wd-modules">
       <li class="list-group-item">
         <div>
@@ -278,58 +200,5 @@
         </ul>
       </li>
     </ul>
-        </ul>
-      </div>
-      <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
-        <h3>Course Status</h3>
-          <!-- Implement Course Status here -->
-            <button>Unpublish</button>
-            <button>Publish</button>
-            <td>
-              <button>Import Existing Content</button>
-            </td>
-            <td>
-              <button>Import from Commons</button>
-            </td>
-            <td>
-              <button> Choose Home Page</button>
-            </td>
-            <td>
-              <button> View Course Stream</button>
-            </td>
-            <td>
-              <button>  New Announcement</button>
-            </td>
-            <td>
-              <button>  New Analytics</button>
-            </td>
-            <td>
-              <button> View Course Notifications </button>
-            </td>
-
-            <div>
-              </br>
-              <h3>Coming Up</h3>
-              <a href="/Kanbas/Courses/Modules/screen.html"> View Calendar </a>
-            </div>
-            
-            <hr />
-          
-              <a href="/Kanbas/Courses/Modules/screen.html">
-                Lecture </a>
-                <p>CS4550, 12631, 202410 </br> Sep 7 at 11:45 am</p>
-            
-            
-              <a href="/Kanbas/Courses/Modules/screen.html">
-                Lecture </a>
-                <p>CS3550, 12631, 202410 </br> Sep 11 at 10:00 am</p>
-            
-            
-              <a href="/Kanbas/Courses/Modules/screen.html">
-                Lecture </a>
-                <p>CS3200, 12631, 202410 </br> Oct 8 at 1:45 pm</p>
-      </div>
-    </div>
   </body>
 </html>
-
