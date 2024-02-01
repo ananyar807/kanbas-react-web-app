@@ -12,6 +12,7 @@
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-wrap: wrap;
 }
 .wd-navigation li.wd-active {
   border-left: 2px solid black;
