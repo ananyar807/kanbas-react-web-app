@@ -5,6 +5,7 @@
   width: 125px;
   margin: 0px;
   margin-left: 20px;
+  height: 100%;
 }
 .wd-navigation li {
   padding-left: 10px;
@@ -12,7 +13,6 @@
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-wrap: wrap;
 }
 .wd-navigation li.wd-active {
   border-left: 2px solid black;
