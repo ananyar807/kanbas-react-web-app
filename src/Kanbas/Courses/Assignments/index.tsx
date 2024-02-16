@@ -43,6 +43,15 @@ function Assignments() {
                 >
                   {assignment.title}
                 </Link>
+                <div className="d-flex row">
+                  <div className="col-2">
+                    <p className="multipleModules"> Multiple Modules </p>
+                  </div>
+                  <div className="col-2">
+                    <p> | Due 3/16/24 | 100 points </p>
+                  </div>
+                </div>
+
                 <span className="float-end">
                   <FaCheckCircle className="text-success" />
                   <FaEllipsisV className="ms-2" />

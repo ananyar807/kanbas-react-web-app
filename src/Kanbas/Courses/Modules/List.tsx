@@ -36,7 +36,7 @@ function ModuleList() {
           <hr />
         </>
       }
-      <ul className="list-group wd-modules">
+      <ul className="list-group wd-modules d-flex flex-column flex-fill">
         {modulesList.map((module) => (
           <li
             className="list-group-item"

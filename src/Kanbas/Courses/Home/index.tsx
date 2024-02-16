@@ -45,7 +45,7 @@ function Home() {
         <div className="assignments">
           <h3>To Do </h3>
           <hr />
-          <a href="/Kanbas/Courses/Modules/screen.html">Assignment 1</a>
+          <a href="/Kanbas/Courses/RS101/Assignments/A101">Assignment 1</a>
           <br />
           <a href="/Kanbas/Courses/Modules/screen.html">Assignment 2</a>
           <br />

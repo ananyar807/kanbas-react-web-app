@@ -32,6 +32,10 @@
 }
 
 a {
-  color: red;
+  color: black;
   /* Additional styling if needed */
+}
+
+.multipleModules {
+  color: red;
 }
