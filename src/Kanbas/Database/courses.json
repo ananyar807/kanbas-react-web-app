@@ -5,7 +5,7 @@
     "number": "RS4550",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "blue_course.jpg"
+    "image": "purple.jpg"
   },
   {
     "_id": "RS102",
@@ -17,11 +17,11 @@
   },
   {
     "_id": "RS103",
-    "name": "Spacecraft Design",
+    "name": "Ecological Genomics",
     "number": "RS4570",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "blue_course.jpg"
+    "image": "green.jpg"
   },
   {
     "_id": "CS2500",
@@ -29,7 +29,7 @@
     "number": "CS2500",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "blue_course.jpg"
+    "image": "yellow.jpg"
   },
   {
     "_id": "CS2510",
@@ -37,7 +37,7 @@
     "number": "CS2510",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "blue_course.jpg"
+    "image": "orange.jpg"
   },
   {
     "_id": "CS3500",
@@ -45,7 +45,7 @@
     "number": "CS3500",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "blue_course.jpg"
+    "image": "red.jpg"
   },
   {
     "_id": "CS3200",
@@ -53,6 +53,6 @@
     "number": "CS3200",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "blue_course.jpg"
+    "image": "pink.jpg"
   }
 ]
