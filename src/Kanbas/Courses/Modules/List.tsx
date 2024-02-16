@@ -29,7 +29,7 @@ function ModuleList() {
             <button type="button" className="btn btn-danger">
               + Module
             </button>
-            <button type="button" className="btn btn-danger">
+            <button type="button" className="btn btn-secondary">
               <FaEllipsisV></FaEllipsisV>
             </button>
           </div>
