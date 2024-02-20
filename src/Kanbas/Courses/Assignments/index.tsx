@@ -10,21 +10,23 @@ function Assignments() {
   );
   return (
     <>
-      <input
-        id="text-fields-assignments"
-        placeholder="Search for Assignments"
-        className="assignmentsButton"
-      />
-      <button type="button" className="assignmentsButton btn btn-secondary">
-        + Group
-      </button>
-      <button type="button" className="assignmentsButton btn btn-danger">
-        {" "}
-        + Assignment
-      </button>
-      <button type="button" className="assignmentsButton btn btn-secondary">
-        <FaEllipsisV></FaEllipsisV>
-      </button>
+      <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+        <input
+          id="text-fields-assignments"
+          placeholder="Search for Assignments"
+          className="assignmentsButton"
+        />
+        <button type="button" className="assignmentsButton btn btn-secondary">
+          + Group
+        </button>
+        <button type="button" className="assignmentsButton btn btn-danger">
+          {" "}
+          + Assignment
+        </button>
+        <button type="button" className="assignmentsButton btn btn-secondary">
+          <FaEllipsisV></FaEllipsisV>
+        </button>
+      </div>
 
       <ul className="list-group wd-modules">
         <li className="list-group-item">
