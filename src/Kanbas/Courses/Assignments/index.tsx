@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
@@ -12,15 +13,16 @@ function Assignments() {
       <input
         id="text-fields-assignments"
         placeholder="Search for Assignments"
+        className="assignmentsButton"
       />
-      <button type="button" className="btn btn-secondary">
+      <button type="button" className="assignmentsButton btn btn-secondary">
         + Group
       </button>
-      <button type="button" className="btn btn-danger">
+      <button type="button" className="assignmentsButton btn btn-danger">
         {" "}
         + Assignment
       </button>
-      <button type="button" className="btn btn-secondary">
+      <button type="button" className="assignmentsButton btn btn-secondary">
         <FaEllipsisV></FaEllipsisV>
       </button>
 
@@ -43,12 +45,12 @@ function Assignments() {
                 >
                   {assignment.title}
                 </Link>
-                <div className="d-flex row">
+                <div className="row">
                   <div className="col-2">
-                    <p className="multipleModules"> Multiple Modules </p>
+                    <p className="multipleModules">Multiple Modules</p>
                   </div>
-                  <div className="col-2">
-                    <p> | Due 3/16/24 | 100 points </p>
+                  <div className="col">
+                    <p>| Due 3/16/24 | 100 points</p>
                   </div>
                 </div>
 

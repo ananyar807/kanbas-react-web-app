@@ -39,3 +39,9 @@ a {
 .multipleModules {
   color: red;
 }
+
+.modulesButton {
+  margin: 3px;
+  padding: 5px;
+  height: 38px;
+}

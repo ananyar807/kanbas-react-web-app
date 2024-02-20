@@ -13,23 +13,23 @@ function ModuleList() {
         <>
           <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
           <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button type="button" className="btn btn-danger">
+            <button type="button" className="modulesButton btn btn-secondary">
               Collapse All
             </button>
-            <button type="button" className="btn btn-danger">
+            <button type="button" className=" modulesButton btn btn-secondary">
               View Progress
             </button>
-            <select>
+            <select className="modulesButton">
               <option>Publish All Modules</option>
               <option>Publish This Module</option>
               <option selected value="Publish All">
                 <i className="fa fa-check-circle text-success"></i> Publish All
               </option>
             </select>
-            <button type="button" className="btn btn-danger">
+            <button type="button" className="modulesButton btn btn-danger">
               + Module
             </button>
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="modulesButton btn btn-secondary">
               <FaEllipsisV></FaEllipsisV>
             </button>
           </div>

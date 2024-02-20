@@ -6,8 +6,11 @@ import {
   FaBook,
   FaRegCalendarAlt,
 } from "react-icons/fa";
+import { TbLetterN } from "react-icons/tb";
+
 function KanbasNavigation() {
   const links = [
+    { label: " ", icon: <TbLetterN className="fs-2" /> },
     { label: "Account", icon: <FaRegUserCircle className="fs-2" /> },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" /> },
     { label: "Courses", icon: <FaBook className="fs-2" /> },

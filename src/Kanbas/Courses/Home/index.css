@@ -6,3 +6,9 @@
 .assignments a {
   color: red;
 }
+
+.statusButton {
+  margin: 5px;
+  padding: 5px;
+  width: 213px;
+}
