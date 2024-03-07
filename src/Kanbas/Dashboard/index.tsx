@@ -9,6 +9,13 @@ function Dashboard({
   addNewCourse,
   deleteCourse,
   updateCourse,
+}: {
+  courses: any[];
+  course: any;
+  setCourse: (course: any) => void;
+  addNewCourse: () => void;
+  deleteCourse: (course: any) => void;
+  updateCourse: () => void;
 }) {
   return (
     <div className="p-4">

@@ -6,7 +6,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 
-function Courses({ courses }) {
+function Courses({ courses }: { courses: any[] }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (
