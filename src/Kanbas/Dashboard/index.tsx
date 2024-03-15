@@ -43,7 +43,9 @@ function Dashboard({
         type="date"
         onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
       />
-      <button onClick={addNewCourse}>Add</button>
+      <button className="btn btn-secondary" onClick={addNewCourse}>
+        Add
+      </button>
       <br />
       <br />
       <h2>Published Courses (12)</h2> <hr />
@@ -70,6 +72,7 @@ function Dashboard({
                     {course.name}&nbsp;
                     <br />
                     <button
+                      className="btn btn-outline-secondary"
                       onClick={(event) => {
                         event.preventDefault();
                         setCourse(course);
@@ -77,8 +80,14 @@ function Dashboard({
                     >
                       Edit
                     </button>
-                    <button onClick={updateCourse}>Update</button>
                     <button
+                      className="btn btn-outline-secondary"
+                      onClick={updateCourse}
+                    >
+                      Update
+                    </button>
+                    <button
+                      className="btn btn-outline-secondary"
                       onClick={(event) => {
                         event.preventDefault();
                         deleteCourse(course._id);
