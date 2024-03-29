@@ -1,0 +1,9 @@
+.button {
+  margin-left: 10px;
+}
+
+.dropdown {
+  background-color: #efefef; /* Set the background color to grey */
+  color: #333; /* Set the text color to a dark color for better visibility */
+  background: #efefef;
+}
