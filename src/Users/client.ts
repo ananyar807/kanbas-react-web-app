@@ -1,6 +1,10 @@
 import axios from "axios";
 export const BASE_API = process.env.REACT_APP_API_BASE;
 export const USERS_API = `${BASE_API}/api/users`;
+const api = axios.create({
+  withCredentials: true,
+});
+
 export interface User {
   _id: string;
   username: string;
@@ -15,7 +19,7 @@ export const signin = async (credentials: User) => {
 };
 
 export const profile = async () => {
-  const response = await axios.post(`${USERS_API}/profile`);
+  const response = await api.post(`${USERS_API}/profile`);
   return response.data;
 };
 
@@ -46,5 +50,10 @@ export const signup = async (user: any) => {
 
 export const signout = async () => {
   const response = await axios.post(`${USERS_API}/signout`);
+  return response.data;
+};
+
+export const findUserById = async (id: any) => {
+  const response = await api.get(`${USERS_API}/${id}`);
   return response.data;
 };

@@ -1,21 +1,31 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { User } from "./client";
 export default function Profile() {
+  const { id } = useParams();
   const [profile, setProfile] = useState({
+    _id: "",
     username: "",
     password: "",
+    role: "USER",
     firstName: "",
     lastName: "",
-    dob: "",
-    email: "",
-    role: "USER",
   });
   const navigate = useNavigate();
   const fetchProfile = async () => {
-    const account = await client.profile();
+    console.log("inside fetch profile");
+    const account: User = await client.profile();
     setProfile(account);
+    console.log("account" + account);
+    console.log("profile" + profile);
   };
+
+  const findUserById = async (id: any) => {
+    const user = await client.findUserById(id);
+    setProfile(user);
+  };
+
   const save = async () => {
     await client.updateUser(profile);
   };
@@ -26,8 +36,13 @@ export default function Profile() {
   };
 
   useEffect(() => {
-    fetchProfile();
+    if (id) {
+      findUserById(id);
+    } else {
+      fetchProfile();
+    }
   }, []);
+
   return (
     <div>
       <h1>Profile</h1>
@@ -61,7 +76,7 @@ export default function Profile() {
               setProfile({ ...profile, lastName: e.target.value })
             }
           />
-          <input
+          {/* <input
             value={profile.dob}
             type="date"
             onChange={(e) => setProfile({ ...profile, dob: e.target.value })}
@@ -69,7 +84,7 @@ export default function Profile() {
           <input
             value={profile.email}
             onChange={(e) => setProfile({ ...profile, email: e.target.value })}
-          />
+          /> */}
           <select
             onChange={(e) => setProfile({ ...profile, role: e.target.value })}
           >

@@ -16,6 +16,9 @@ export default function Signin() {
     await client.signin(credentials);
     navigate("/Kanbas/Account/Profile");
   };
+  const signup = async () => {
+    navigate("/Kanbas/Account/Signup");
+  };
   return (
     <div>
       <h1>Signin</h1>
@@ -32,6 +35,7 @@ export default function Signin() {
         }
       />
       <button onClick={signin}> Signin </button>
+      <button onClick={signup}> Signup </button>
     </div>
   );
 }
