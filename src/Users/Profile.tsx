@@ -14,11 +14,8 @@ export default function Profile() {
   });
   const navigate = useNavigate();
   const fetchProfile = async () => {
-    console.log("inside fetch profile");
     const account: User = await client.profile();
     setProfile(account);
-    console.log("account" + account);
-    console.log("profile" + profile);
   };
 
   const findUserById = async (id: any) => {
@@ -49,7 +46,6 @@ export default function Profile() {
       <Link to="/Kanbas/Account/Admin/Users" className="btn btn-warning w-100">
         Users
       </Link>
-      {/* this part isnt rendering */}
       {profile && (
         <div>
           <input
@@ -76,15 +72,6 @@ export default function Profile() {
               setProfile({ ...profile, lastName: e.target.value })
             }
           />
-          {/* <input
-            value={profile.dob}
-            type="date"
-            onChange={(e) => setProfile({ ...profile, dob: e.target.value })}
-          />
-          <input
-            value={profile.email}
-            onChange={(e) => setProfile({ ...profile, email: e.target.value })}
-          /> */}
           <select
             onChange={(e) => setProfile({ ...profile, role: e.target.value })}
           >

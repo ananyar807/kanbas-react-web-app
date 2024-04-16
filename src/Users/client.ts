@@ -14,7 +14,7 @@ export interface User {
   lastName: string;
 }
 export const signin = async (credentials: User) => {
-  const response = await axios.post(`${USERS_API}/signin`, credentials);
+  const response = await api.post(`${USERS_API}/signin`, credentials);
   return response.data;
 };
 
@@ -24,32 +24,32 @@ export const profile = async () => {
 };
 
 export const updateUser = async (user: any) => {
-  const response = await axios.put(`${USERS_API}/${user._id}`, user);
+  const response = await api.put(`${USERS_API}/${user._id}`, user);
   return response.data;
 };
 
 export const findAllUsers = async () => {
-  const response = await axios.get(`${USERS_API}`);
+  const response = await api.get(`${USERS_API}`);
   return response.data;
 };
 
 export const createUser = async (user: any) => {
-  const response = await axios.post(`${USERS_API}`, user);
+  const response = await api.post(`${USERS_API}`, user);
   return response.data;
 };
 
 export const deleteUser = async (user: any) => {
-  const response = await axios.delete(`${USERS_API}/${user._id}`);
+  const response = await api.delete(`${USERS_API}/${user._id}`);
   return response.data;
 };
 
 export const signup = async (user: any) => {
-  const response = await axios.post(`${USERS_API}/signup`, user);
+  const response = await api.post(`${USERS_API}/signup`, user);
   return response.data;
 };
 
 export const signout = async () => {
-  const response = await axios.post(`${USERS_API}/signout`);
+  const response = await api.post(`${USERS_API}/signout`);
   return response.data;
 };
 
